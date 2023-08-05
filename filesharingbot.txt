@@ -1,0 +1,979 @@
+[04-Aug-23 17:38:57 - WARNING] - bot - Telegram says: [400 PEER_ID_INVALID] - The peer id being used is invalid or not known yet. Make sure you meet the peer before interacting with it 
+[04-Aug-23 17:38:57 - WARNING] - bot - Bot can't Export Invite link from Force Sub Channel!
+[04-Aug-23 17:38:57 - WARNING] - bot - Please Double check the FORCE_SUB_CHANNEL value and Make sure Bot is Admin in channel with Invite Users via Link Permission, Current Force Sub Channel Value: 1
+[04-Aug-23 17:38:57 - INFO] - bot - 
+Bot Stopped. Join https://github.com/AshishYesale7for support
+[04-Aug-23 17:41:13 - WARNING] - bot - Telegram says: [400 CHANNEL_INVALID] - The channel parameter is invalid (caused by "channels.GetChannels")
+[04-Aug-23 17:41:13 - WARNING] - bot - Make Sure bot is Admin in DB Channel, and Double check the CHANNEL_ID Value, Current Value -1001855795602
+[04-Aug-23 17:41:13 - INFO] - bot - 
+Bot Stopped. Join https://github.com/AshishYesale7for support
+[04-Aug-23 17:42:31 - WARNING] - bot - Peer id invalid: 1001855795602
+[04-Aug-23 17:42:31 - WARNING] - bot - Make Sure bot is Admin in DB Channel, and Double check the CHANNEL_ID Value, Current Value 1001855795602
+[04-Aug-23 17:42:31 - INFO] - bot - 
+Bot Stopped. Join https://github.com/AshishYesale7for support
+[04-Aug-23 17:44:11 - WARNING] - bot - Peer id invalid: 1001855795602
+[04-Aug-23 17:44:11 - WARNING] - bot - Make Sure bot is Admin in DB Channel, and Double check the CHANNEL_ID Value, Current Value 1001855795602
+[04-Aug-23 17:44:11 - INFO] - bot - 
+Bot Stopped. Join https://github.com/AshishYesale7for support
+[04-Aug-23 17:44:28 - WARNING] - bot - Telegram says: [400 CHAT_ADMIN_REQUIRED] - The method requires chat admin privileges (caused by "messages.SendMessage")
+[04-Aug-23 17:44:28 - WARNING] - bot - Make Sure bot is Admin in DB Channel, and Double check the CHANNEL_ID Value, Current Value -1001855795602
+[04-Aug-23 17:44:28 - INFO] - bot - 
+Bot Stopped. Join https://github.com/AshishYesale7for support
+[04-Aug-23 17:45:31 - WARNING] - bot - Telegram says: [400 CHAT_ADMIN_REQUIRED] - The method requires chat admin privileges (caused by "messages.SendMessage")
+[04-Aug-23 17:45:31 - WARNING] - bot - Make Sure bot is Admin in DB Channel, and Double check the CHANNEL_ID Value, Current Value -1001855795602
+[04-Aug-23 17:45:31 - INFO] - bot - 
+Bot Stopped. Join https://github.com/AshishYesale7for support
+[04-Aug-23 17:49:25 - WARNING] - bot - Telegram says: [400 CHAT_ADMIN_REQUIRED] - The method requires chat admin privileges (caused by "messages.SendMessage")
+[04-Aug-23 17:49:25 - WARNING] - bot - Make Sure bot is Admin in DB Channel, and Double check the CHANNEL_ID Value, Current Value -1001855795602
+[04-Aug-23 17:49:25 - INFO] - bot - 
+Bot Stopped. Join https://github.com/AshishYesale7for support
+[04-Aug-23 17:51:14 - INFO] - bot - Bot Running..!
+
+Created by 
+https://github.com/AshishYesale7
+[04-Aug-23 17:52:23 - ERROR] - pyrogram.dispatcher - hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64cced3a13bf6cddc6e78c96, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+Traceback (most recent call last):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyromod\listen\listen.py", line 93, in resolve_listener
+    await self.user_callback(client, message, *args)
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\plugins\start.py", line 24, in start_command
+    if not await present_user(id):
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\database\database.py", line 19, in present_user
+    found = user_data.find_one({'_id': user_id})
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 1470, in find_one
+    for result in cursor.limit(-1):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1251, in next
+    if len(self.__data) or self._refresh():
+                           ^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1142, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1758, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1703, in __start_session
+    self._topology._check_implicit_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 538, in _check_implicit_session_support
+    self._check_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 554, in _check_session_support
+    self._select_servers_loop(
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 238, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64cced3a13bf6cddc6e78c96, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+[04-Aug-23 17:54:13 - ERROR] - pyrogram.dispatcher - hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64cced3a13bf6cddc6e78c96, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+Traceback (most recent call last):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyromod\listen\listen.py", line 93, in resolve_listener
+    await self.user_callback(client, message, *args)
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\plugins\start.py", line 24, in start_command
+    if not await present_user(id):
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\database\database.py", line 19, in present_user
+    found = user_data.find_one({'_id': user_id})
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 1470, in find_one
+    for result in cursor.limit(-1):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1251, in next
+    if len(self.__data) or self._refresh():
+                           ^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1142, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1758, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1703, in __start_session
+    self._topology._check_implicit_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 538, in _check_implicit_session_support
+    self._check_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 554, in _check_session_support
+    self._select_servers_loop(
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 238, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64cced3a13bf6cddc6e78c96, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+[04-Aug-23 17:54:43 - ERROR] - pyrogram.dispatcher - hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64cced3a13bf6cddc6e78c96, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+Traceback (most recent call last):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyromod\listen\listen.py", line 93, in resolve_listener
+    await self.user_callback(client, message, *args)
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\plugins\start.py", line 24, in start_command
+    if not await present_user(id):
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\database\database.py", line 19, in present_user
+    found = user_data.find_one({'_id': user_id})
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 1470, in find_one
+    for result in cursor.limit(-1):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1251, in next
+    if len(self.__data) or self._refresh():
+                           ^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1142, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1758, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1703, in __start_session
+    self._topology._check_implicit_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 538, in _check_implicit_session_support
+    self._check_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 554, in _check_session_support
+    self._select_servers_loop(
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 238, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64cced3a13bf6cddc6e78c96, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+[04-Aug-23 17:55:13 - ERROR] - pyrogram.dispatcher - hstream.mysql.pythonanywhere-services.com:27017: [Errno 11001] getaddrinfo failed, Timeout: 30s, Topology Description: <TopologyDescription id: 64cced3a13bf6cddc6e78c96, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('hstream.mysql.pythonanywhere-services.com:27017: [Errno 11001] getaddrinfo failed')>]>
+Traceback (most recent call last):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyromod\listen\listen.py", line 93, in resolve_listener
+    await self.user_callback(client, message, *args)
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\plugins\start.py", line 24, in start_command
+    if not await present_user(id):
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\database\database.py", line 19, in present_user
+    found = user_data.find_one({'_id': user_id})
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 1470, in find_one
+    for result in cursor.limit(-1):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1251, in next
+    if len(self.__data) or self._refresh():
+                           ^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1142, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1758, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1703, in __start_session
+    self._topology._check_implicit_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 538, in _check_implicit_session_support
+    self._check_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 554, in _check_session_support
+    self._select_servers_loop(
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 238, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: hstream.mysql.pythonanywhere-services.com:27017: [Errno 11001] getaddrinfo failed, Timeout: 30s, Topology Description: <TopologyDescription id: 64cced3a13bf6cddc6e78c96, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('hstream.mysql.pythonanywhere-services.com:27017: [Errno 11001] getaddrinfo failed')>]>
+[04-Aug-23 17:56:47 - ERROR] - pyrogram.dispatcher - hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64cced3a13bf6cddc6e78c96, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+Traceback (most recent call last):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyromod\listen\listen.py", line 93, in resolve_listener
+    await self.user_callback(client, message, *args)
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\plugins\start.py", line 24, in start_command
+    if not await present_user(id):
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\database\database.py", line 19, in present_user
+    found = user_data.find_one({'_id': user_id})
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 1470, in find_one
+    for result in cursor.limit(-1):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1251, in next
+    if len(self.__data) or self._refresh():
+                           ^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1142, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1758, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1703, in __start_session
+    self._topology._check_implicit_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 538, in _check_implicit_session_support
+    self._check_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 554, in _check_session_support
+    self._select_servers_loop(
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 238, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64cced3a13bf6cddc6e78c96, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+[04-Aug-23 17:57:17 - ERROR] - pyrogram.dispatcher - hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64cced3a13bf6cddc6e78c96, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+Traceback (most recent call last):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyromod\listen\listen.py", line 93, in resolve_listener
+    await self.user_callback(client, message, *args)
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\plugins\start.py", line 24, in start_command
+    if not await present_user(id):
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\database\database.py", line 19, in present_user
+    found = user_data.find_one({'_id': user_id})
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 1470, in find_one
+    for result in cursor.limit(-1):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1251, in next
+    if len(self.__data) or self._refresh():
+                           ^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1142, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1758, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1703, in __start_session
+    self._topology._check_implicit_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 538, in _check_implicit_session_support
+    self._check_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 554, in _check_session_support
+    self._select_servers_loop(
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 238, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64cced3a13bf6cddc6e78c96, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+[04-Aug-23 17:57:48 - ERROR] - pyrogram.dispatcher - hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64cced3a13bf6cddc6e78c96, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+Traceback (most recent call last):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyromod\listen\listen.py", line 93, in resolve_listener
+    await self.user_callback(client, message, *args)
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\plugins\start.py", line 24, in start_command
+    if not await present_user(id):
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\database\database.py", line 19, in present_user
+    found = user_data.find_one({'_id': user_id})
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 1470, in find_one
+    for result in cursor.limit(-1):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1251, in next
+    if len(self.__data) or self._refresh():
+                           ^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1142, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1758, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1703, in __start_session
+    self._topology._check_implicit_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 538, in _check_implicit_session_support
+    self._check_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 554, in _check_session_support
+    self._select_servers_loop(
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 238, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64cced3a13bf6cddc6e78c96, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+[04-Aug-23 17:58:18 - ERROR] - pyrogram.dispatcher - hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64cced3a13bf6cddc6e78c96, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+Traceback (most recent call last):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyromod\listen\listen.py", line 93, in resolve_listener
+    await self.user_callback(client, message, *args)
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\plugins\start.py", line 24, in start_command
+    if not await present_user(id):
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\database\database.py", line 19, in present_user
+    found = user_data.find_one({'_id': user_id})
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 1470, in find_one
+    for result in cursor.limit(-1):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1251, in next
+    if len(self.__data) or self._refresh():
+                           ^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1142, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1758, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1703, in __start_session
+    self._topology._check_implicit_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 538, in _check_implicit_session_support
+    self._check_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 554, in _check_session_support
+    self._select_servers_loop(
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 238, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64cced3a13bf6cddc6e78c96, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+[04-Aug-23 17:58:48 - ERROR] - pyrogram.dispatcher - hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64cced3a13bf6cddc6e78c96, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+Traceback (most recent call last):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyromod\listen\listen.py", line 93, in resolve_listener
+    await self.user_callback(client, message, *args)
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\plugins\start.py", line 24, in start_command
+    if not await present_user(id):
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\database\database.py", line 19, in present_user
+    found = user_data.find_one({'_id': user_id})
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 1470, in find_one
+    for result in cursor.limit(-1):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1251, in next
+    if len(self.__data) or self._refresh():
+                           ^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1142, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1758, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1703, in __start_session
+    self._topology._check_implicit_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 538, in _check_implicit_session_support
+    self._check_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 554, in _check_session_support
+    self._select_servers_loop(
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 238, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64cced3a13bf6cddc6e78c96, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+[04-Aug-23 17:59:19 - ERROR] - pyrogram.dispatcher - hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64cced3a13bf6cddc6e78c96, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+Traceback (most recent call last):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyromod\listen\listen.py", line 93, in resolve_listener
+    await self.user_callback(client, message, *args)
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\plugins\start.py", line 24, in start_command
+    if not await present_user(id):
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\database\database.py", line 19, in present_user
+    found = user_data.find_one({'_id': user_id})
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 1470, in find_one
+    for result in cursor.limit(-1):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1251, in next
+    if len(self.__data) or self._refresh():
+                           ^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1142, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1758, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1703, in __start_session
+    self._topology._check_implicit_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 538, in _check_implicit_session_support
+    self._check_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 554, in _check_session_support
+    self._select_servers_loop(
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 238, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64cced3a13bf6cddc6e78c96, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+[04-Aug-23 18:00:03 - ERROR] - pyrogram.dispatcher - hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64cced3a13bf6cddc6e78c96, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+Traceback (most recent call last):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyromod\listen\listen.py", line 93, in resolve_listener
+    await self.user_callback(client, message, *args)
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\plugins\start.py", line 24, in start_command
+    if not await present_user(id):
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\database\database.py", line 19, in present_user
+    found = user_data.find_one({'_id': user_id})
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 1470, in find_one
+    for result in cursor.limit(-1):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1251, in next
+    if len(self.__data) or self._refresh():
+                           ^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1142, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1758, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1703, in __start_session
+    self._topology._check_implicit_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 538, in _check_implicit_session_support
+    self._check_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 554, in _check_session_support
+    self._select_servers_loop(
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 238, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64cced3a13bf6cddc6e78c96, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+[04-Aug-23 18:00:34 - ERROR] - pyrogram.dispatcher - hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64cced3a13bf6cddc6e78c96, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+Traceback (most recent call last):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyromod\listen\listen.py", line 93, in resolve_listener
+    await self.user_callback(client, message, *args)
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\plugins\start.py", line 24, in start_command
+    if not await present_user(id):
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\database\database.py", line 19, in present_user
+    found = user_data.find_one({'_id': user_id})
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 1470, in find_one
+    for result in cursor.limit(-1):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1251, in next
+    if len(self.__data) or self._refresh():
+                           ^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1142, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1758, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1703, in __start_session
+    self._topology._check_implicit_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 538, in _check_implicit_session_support
+    self._check_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 554, in _check_session_support
+    self._select_servers_loop(
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 238, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64cced3a13bf6cddc6e78c96, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+[04-Aug-23 18:01:04 - ERROR] - pyrogram.dispatcher - hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64cced3a13bf6cddc6e78c96, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+Traceback (most recent call last):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyromod\listen\listen.py", line 93, in resolve_listener
+    await self.user_callback(client, message, *args)
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\plugins\start.py", line 24, in start_command
+    if not await present_user(id):
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\database\database.py", line 19, in present_user
+    found = user_data.find_one({'_id': user_id})
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 1470, in find_one
+    for result in cursor.limit(-1):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1251, in next
+    if len(self.__data) or self._refresh():
+                           ^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1142, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1758, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1703, in __start_session
+    self._topology._check_implicit_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 538, in _check_implicit_session_support
+    self._check_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 554, in _check_session_support
+    self._select_servers_loop(
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 238, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64cced3a13bf6cddc6e78c96, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+[04-Aug-23 18:01:34 - ERROR] - pyrogram.dispatcher - hstream.mysql.pythonanywhere-services.com:27017: [Errno 11001] getaddrinfo failed, Timeout: 30s, Topology Description: <TopologyDescription id: 64cced3a13bf6cddc6e78c96, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('hstream.mysql.pythonanywhere-services.com:27017: [Errno 11001] getaddrinfo failed')>]>
+Traceback (most recent call last):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyromod\listen\listen.py", line 93, in resolve_listener
+    await self.user_callback(client, message, *args)
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\plugins\start.py", line 24, in start_command
+    if not await present_user(id):
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\database\database.py", line 19, in present_user
+    found = user_data.find_one({'_id': user_id})
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 1470, in find_one
+    for result in cursor.limit(-1):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1251, in next
+    if len(self.__data) or self._refresh():
+                           ^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1142, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1758, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1703, in __start_session
+    self._topology._check_implicit_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 538, in _check_implicit_session_support
+    self._check_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 554, in _check_session_support
+    self._select_servers_loop(
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 238, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: hstream.mysql.pythonanywhere-services.com:27017: [Errno 11001] getaddrinfo failed, Timeout: 30s, Topology Description: <TopologyDescription id: 64cced3a13bf6cddc6e78c96, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('hstream.mysql.pythonanywhere-services.com:27017: [Errno 11001] getaddrinfo failed')>]>
+[04-Aug-23 18:01:34 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: Connection lost
+[04-Aug-23 18:01:35 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:01:36 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:01:37 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[04-Aug-23 18:01:37 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:01:38 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:01:39 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:01:40 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[04-Aug-23 18:01:40 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:01:41 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:01:42 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:01:43 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[04-Aug-23 18:01:43 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:01:44 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:01:45 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:01:46 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[04-Aug-23 18:01:46 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:01:47 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:01:48 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:01:49 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[04-Aug-23 18:01:49 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:01:50 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:01:51 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:01:52 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[04-Aug-23 18:01:52 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:01:53 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:01:54 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:01:55 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[04-Aug-23 18:01:55 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:01:56 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:01:57 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:01:58 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[04-Aug-23 18:01:58 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:01:59 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:02:00 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:02:01 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[04-Aug-23 18:02:01 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:02:02 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:02:16 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:02:17 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[04-Aug-23 18:02:17 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:02:18 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:02:19 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:02:20 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[04-Aug-23 18:02:20 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:02:21 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:02:22 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 18:02:23 - WARNING] - pyrogram.connection.connection - Connection failed! Trying again...
+[04-Aug-23 18:02:53 - ERROR] - pyrogram.dispatcher - hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64cced3a13bf6cddc6e78c96, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+Traceback (most recent call last):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyromod\listen\listen.py", line 93, in resolve_listener
+    await self.user_callback(client, message, *args)
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\plugins\start.py", line 24, in start_command
+    if not await present_user(id):
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\database\database.py", line 19, in present_user
+    found = user_data.find_one({'_id': user_id})
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 1470, in find_one
+    for result in cursor.limit(-1):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1251, in next
+    if len(self.__data) or self._refresh():
+                           ^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1142, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1758, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1703, in __start_session
+    self._topology._check_implicit_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 538, in _check_implicit_session_support
+    self._check_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 554, in _check_session_support
+    self._select_servers_loop(
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 238, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64cced3a13bf6cddc6e78c96, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+[04-Aug-23 18:54:46 - INFO] - bot - Bot Running..!
+
+Created by 
+https://github.com/AshishYesale7
+[04-Aug-23 18:56:15 - ERROR] - pyrogram.dispatcher - hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64ccfc1d38fb5aa4bb0999a3, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+Traceback (most recent call last):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyromod\listen\listen.py", line 93, in resolve_listener
+    await self.user_callback(client, message, *args)
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\plugins\start.py", line 24, in start_command
+    if not await present_user(id):
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\database\database.py", line 19, in present_user
+    found = user_data.find_one({'_id': user_id})
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 1470, in find_one
+    for result in cursor.limit(-1):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1251, in next
+    if len(self.__data) or self._refresh():
+                           ^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1142, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1758, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1703, in __start_session
+    self._topology._check_implicit_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 538, in _check_implicit_session_support
+    self._check_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 554, in _check_session_support
+    self._select_servers_loop(
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 238, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64ccfc1d38fb5aa4bb0999a3, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+[04-Aug-23 18:56:46 - ERROR] - pyrogram.dispatcher - hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64ccfc1d38fb5aa4bb0999a3, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+Traceback (most recent call last):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyromod\listen\listen.py", line 93, in resolve_listener
+    await self.user_callback(client, message, *args)
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\plugins\start.py", line 24, in start_command
+    if not await present_user(id):
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\database\database.py", line 19, in present_user
+    found = user_data.find_one({'_id': user_id})
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 1470, in find_one
+    for result in cursor.limit(-1):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1251, in next
+    if len(self.__data) or self._refresh():
+                           ^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1142, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1758, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1703, in __start_session
+    self._topology._check_implicit_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 538, in _check_implicit_session_support
+    self._check_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 554, in _check_session_support
+    self._select_servers_loop(
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 238, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64ccfc1d38fb5aa4bb0999a3, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+[04-Aug-23 18:57:40 - ERROR] - pyrogram.dispatcher - hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64ccfc1d38fb5aa4bb0999a3, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+Traceback (most recent call last):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 240, in handler_worker
+    await handler.callback(self.client, *args)
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyromod\listen\listen.py", line 93, in resolve_listener
+    await self.user_callback(client, message, *args)
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\plugins\start.py", line 24, in start_command
+    if not await present_user(id):
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\database\database.py", line 19, in present_user
+    found = user_data.find_one({'_id': user_id})
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\collection.py", line 1470, in find_one
+    for result in cursor.limit(-1):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1251, in next
+    if len(self.__data) or self._refresh():
+                           ^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\cursor.py", line 1142, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1758, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\mongo_client.py", line 1703, in __start_session
+    self._topology._check_implicit_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 538, in _check_implicit_session_support
+    self._check_session_support()
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 554, in _check_session_support
+    self._select_servers_loop(
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pymongo\topology.py", line 238, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: hstream.mysql.pythonanywhere-services.com:27017: timed out, Timeout: 30s, Topology Description: <TopologyDescription id: 64ccfc1d38fb5aa4bb0999a3, topology_type: Unknown, servers: [<ServerDescription ('hstream.mysql.pythonanywhere-services.com', 27017) server_type: Unknown, rtt: None, error=NetworkTimeout('hstream.mysql.pythonanywhere-services.com:27017: timed out')>]>
+[04-Aug-23 19:50:42 - WARNING] - bot - Telegram says: [400 PEER_ID_INVALID] - The peer id being used is invalid or not known yet. Make sure you meet the peer before interacting with it 
+[04-Aug-23 19:50:42 - WARNING] - bot - Bot can't Export Invite link from Force Sub Channel!
+[04-Aug-23 19:50:42 - WARNING] - bot - Please Double check the FORCE_SUB_CHANNEL value and Make sure Bot is Admin in channel with Invite Users via Link Permission, Current Force Sub Channel Value: 1
+[04-Aug-23 19:50:42 - INFO] - bot - 
+Bot Stopped. Join https://github.com/AshishYesale7 for support
+[04-Aug-23 19:58:10 - INFO] - bot - Bot Running..!
+
+Created by 
+https://github.com/AshishYesale7
+[04-Aug-23 20:19:22 - INFO] - bot - Bot Running..!
+
+Created by 
+https://github.com/AshishYesale7
+[04-Aug-23 20:51:39 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[04-Aug-23 21:10:55 - INFO] - bot - Bot Running..!
+
+Created by https://github.com/AshishYesale7
+
+[04-Aug-23 21:23:11 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[04-Aug-23 21:28:56 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[04-Aug-23 21:30:25 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[04-Aug-23 23:53:21 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[05-Aug-23 00:02:32 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[05-Aug-23 00:23:25 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[05-Aug-23 00:23:25 - INFO] - bot -  
+
+       
+H Stream BOT 
+[05-Aug-23 00:27:12 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[05-Aug-23 00:27:12 - INFO] - bot -  
+
+       
+H Stream BOT 
+[05-Aug-23 00:31:55 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[05-Aug-23 00:31:55 - INFO] - bot -  
+
+       
+H Stream BOT 
+[05-Aug-23 00:39:20 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[05-Aug-23 00:39:20 - INFO] - bot -  
+
+       
+H Stream BOT 
+[05-Aug-23 00:40:46 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[05-Aug-23 00:40:46 - INFO] - bot -  
+
+       
+H Stream BOT 
+[05-Aug-23 00:41:30 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[05-Aug-23 00:41:30 - INFO] - bot -  
+
+       
+H Stream BOT 
+[05-Aug-23 00:44:04 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[05-Aug-23 00:44:04 - INFO] - bot -  
+
+       
+H Stream BOT 
+[05-Aug-23 00:44:46 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[05-Aug-23 00:44:46 - INFO] - bot -  
+
+       
+H Stream BOT 
+[05-Aug-23 00:45:58 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[05-Aug-23 00:45:58 - INFO] - bot -  
+
+       
+H Stream BOT 
+[05-Aug-23 00:52:38 - WARNING] - pyrogram.types.messages_and_media.message - Empty messages cannot be copied.
+[05-Aug-23 00:52:40 - WARNING] - pyrogram.types.messages_and_media.message - Empty messages cannot be copied.
+[05-Aug-23 00:52:43 - WARNING] - pyrogram.types.messages_and_media.message - Empty messages cannot be copied.
+[05-Aug-23 00:58:43 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[05-Aug-23 00:58:43 - INFO] - bot -  
+
+       
+H Stream BOT 
+[05-Aug-23 01:05:00 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[05-Aug-23 01:05:00 - INFO] - bot -  
+
+       
+H Stream BOT 
+[05-Aug-23 01:06:37 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[05-Aug-23 01:06:37 - INFO] - bot -  
+
+       
+H Stream BOT 
+[05-Aug-23 01:07:45 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[05-Aug-23 01:07:45 - INFO] - bot -  
+
+       
+H Stream BOT 
+[05-Aug-23 01:20:50 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[05-Aug-23 01:20:50 - INFO] - bot -  
+
+       
+H Stream BOT 
+[05-Aug-23 01:23:12 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[05-Aug-23 01:23:12 - INFO] - bot -  
+
+       
+H Stream BOT 
+[05-Aug-23 01:33:34 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[05-Aug-23 01:33:34 - INFO] - bot -  
+
+       
+H Stream BOT 
+[05-Aug-23 13:48:19 - WARNING] - bot - Telegram says: [400 CHANNEL_INVALID] - The channel parameter is invalid (caused by "channels.GetChannels")
+[05-Aug-23 13:48:19 - WARNING] - bot - Bot can't Export Invite link from Force Sub Channel!
+[05-Aug-23 13:48:19 - WARNING] - bot - Please Double check the FORCE_SUB_CHANNEL value and Make sure Bot is Admin in channel with Invite Users via Link Permission, Current Force Sub Channel Value: -1001855795602
+[05-Aug-23 13:48:19 - INFO] - bot - 
+Bot Stopped. Join https://t.me/CodeXBotzSupport for support
+[05-Aug-23 13:56:36 - WARNING] - bot - Telegram says: [400 CHANNEL_INVALID] - The channel parameter is invalid (caused by "channels.GetChannels")
+[05-Aug-23 13:56:36 - WARNING] - bot - Bot can't Export Invite link from Force Sub Channel!
+[05-Aug-23 13:56:36 - WARNING] - bot - Please Double check the FORCE_SUB_CHANNEL value and Make sure Bot is Admin in channel with Invite Users via Link Permission, Current Force Sub Channel Value: -1001855795602
+[05-Aug-23 13:56:36 - INFO] - bot - 
+Bot Stopped. Join https://t.me/CodeXBotzSupport for support
+[05-Aug-23 13:58:59 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[05-Aug-23 13:58:59 - INFO] - bot -  
+
+       
+H Stream BOT 
+[05-Aug-23 14:00:24 - ERROR] - pyrogram.dispatcher - Telegram says: [400 CHAT_ADMIN_REQUIRED] - The method requires chat admin privileges (caused by "channels.GetParticipant")
+Traceback (most recent call last):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 226, in handler_worker
+    if await handler.check(self.client, parsed_update):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyromod\listen\listen.py", line 103, in check
+    await self.filters(client, update)
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\filters.py", line 79, in __call__
+    y = await self.other(client, update)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\helper_func.py", line 19, in is_subscribed
+    member = await client.get_chat_member(chat_id = FORCE_SUB_CHANNEL, user_id = user_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\methods\chats\get_chat_member.py", line 80, in get_chat_member
+    r = await self.invoke(
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\methods\advanced\invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\session\session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\session\session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\errors\rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.ChatAdminRequired: Telegram says: [400 CHAT_ADMIN_REQUIRED] - The method requires chat admin privileges (caused by "channels.GetParticipant")
+[05-Aug-23 14:01:04 - ERROR] - pyrogram.dispatcher - Telegram says: [400 CHAT_ADMIN_REQUIRED] - The method requires chat admin privileges (caused by "channels.GetParticipant")
+Traceback (most recent call last):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 226, in handler_worker
+    if await handler.check(self.client, parsed_update):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyromod\listen\listen.py", line 103, in check
+    await self.filters(client, update)
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\filters.py", line 79, in __call__
+    y = await self.other(client, update)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\helper_func.py", line 19, in is_subscribed
+    member = await client.get_chat_member(chat_id = FORCE_SUB_CHANNEL, user_id = user_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\methods\chats\get_chat_member.py", line 80, in get_chat_member
+    r = await self.invoke(
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\methods\advanced\invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\session\session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\session\session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\errors\rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.ChatAdminRequired: Telegram says: [400 CHAT_ADMIN_REQUIRED] - The method requires chat admin privileges (caused by "channels.GetParticipant")
+[05-Aug-23 14:01:13 - ERROR] - pyrogram.dispatcher - Telegram says: [400 CHAT_ADMIN_REQUIRED] - The method requires chat admin privileges (caused by "channels.GetParticipant")
+Traceback (most recent call last):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 226, in handler_worker
+    if await handler.check(self.client, parsed_update):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyromod\listen\listen.py", line 103, in check
+    await self.filters(client, update)
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\filters.py", line 79, in __call__
+    y = await self.other(client, update)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\helper_func.py", line 19, in is_subscribed
+    member = await client.get_chat_member(chat_id = FORCE_SUB_CHANNEL, user_id = user_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\methods\chats\get_chat_member.py", line 80, in get_chat_member
+    r = await self.invoke(
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\methods\advanced\invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\session\session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\session\session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\errors\rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.ChatAdminRequired: Telegram says: [400 CHAT_ADMIN_REQUIRED] - The method requires chat admin privileges (caused by "channels.GetParticipant")
+[05-Aug-23 14:04:39 - ERROR] - pyrogram.dispatcher - Telegram says: [400 CHAT_ADMIN_REQUIRED] - The method requires chat admin privileges (caused by "channels.GetParticipant")
+Traceback (most recent call last):
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\dispatcher.py", line 226, in handler_worker
+    if await handler.check(self.client, parsed_update):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyromod\listen\listen.py", line 103, in check
+    await self.filters(client, update)
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\filters.py", line 79, in __call__
+    y = await self.other(client, update)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\OneDrive\Documents\File-Sharing-Bot-main\File-Sharing-Bot-main\helper_func.py", line 19, in is_subscribed
+    member = await client.get_chat_member(chat_id = FORCE_SUB_CHANNEL, user_id = user_id)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\methods\chats\get_chat_member.py", line 80, in get_chat_member
+    r = await self.invoke(
+        ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\methods\advanced\invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\session\session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\session\session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "C:\Users\pcs\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyrogram\errors\rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.ChatAdminRequired: Telegram says: [400 CHAT_ADMIN_REQUIRED] - The method requires chat admin privileges (caused by "channels.GetParticipant")
+[05-Aug-23 14:12:59 - WARNING] - bot - Telegram says: [400 CHANNEL_INVALID] - The channel parameter is invalid (caused by "channels.GetChannels")
+[05-Aug-23 14:12:59 - WARNING] - bot - Bot can't Export Invite link from Force Sub Channel!
+[05-Aug-23 14:12:59 - WARNING] - bot - Please Double check the FORCE_SUB_CHANNEL value and Make sure Bot is Admin in channel with Invite Users via Link Permission, Current Force Sub Channel Value: -1001855795602
+[05-Aug-23 14:12:59 - INFO] - bot - 
+Bot Stopped. Join https://t.me/CodeXBotzSupport for support
+[05-Aug-23 14:14:05 - WARNING] - bot - Telegram says: [400 CHANNEL_INVALID] - The channel parameter is invalid (caused by "channels.GetChannels")
+[05-Aug-23 14:14:05 - WARNING] - bot - Bot can't Export Invite link from Force Sub Channel!
+[05-Aug-23 14:14:05 - WARNING] - bot - Please Double check the FORCE_SUB_CHANNEL value and Make sure Bot is Admin in channel with Invite Users via Link Permission, Current Force Sub Channel Value: -1001855795602
+[05-Aug-23 14:14:05 - INFO] - bot - 
+Bot Stopped. Join https://t.me/CodeXBotzSupport for support
+[05-Aug-23 14:18:46 - INFO] - bot - Bot Running..!
+
+Created by 
+https://t.me/CodeXBotz
+[05-Aug-23 14:18:46 - INFO] - bot -  
+
+       
+H Stream BOT 
+[05-Aug-23 14:24:31 - WARNING] - pyrogram.types.messages_and_media.message - Empty messages cannot be copied.
+[05-Aug-23 14:25:26 - WARNING] - pyrogram.types.messages_and_media.message - Empty messages cannot be copied.
+[05-Aug-23 14:26:46 - WARNING] - pyrogram.types.messages_and_media.message - Empty messages cannot be copied.
+[05-Aug-23 14:32:46 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
+[05-Aug-23 14:32:47 - WARNING] - pyrogram.connection.connection - Unable to connect due to network issues: [WinError 1231] The network location cannot be reached. For information about network troubleshooting, see Windows Help
